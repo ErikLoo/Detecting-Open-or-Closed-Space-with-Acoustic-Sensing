@@ -11,13 +11,13 @@ The purpose of this project is to explore the technical feasilities of detecting
   <img src="Images/open_space.png">
 </p>
 
-The prototype is made of: (1) speaker (2) microphone (3) android device (4) amplification circuit (5) 9V battery used to power the amplification circuit.
+
+The prototype is made of: (1) speaker (2) microphone (3) android device (4) amplification circuit (5) 9V battery used to power the <a href="http://afrotechmods.com/tutorials/2017/01/17/how-to-make-a-simple-1-watt-audio-amplifier-lm386-based/">amplification circuit</a>.
 The android device is essentially being used as programmable micro-controller. We added an extenal speaker-microphone module to the device for two primary reasons: (1) To amplify the acoustic signal. (2) To place the microphone and the speaker on the same side so the body of the phone won't impede the propagation of sound waves. 
 
+**SoLrSpacePropertyDetection - The Android client responsbile for operating the android device**
 
 
-**SoLrSpacePropertyDetection** - The Android client responsbile for operating the android device
-
-**SoQrLocServer** - The Java server that sends command to multiple android clients. Timing.
+**SoQrLocServer - The Java server** that sends command to multiple android clients. Timing.
 
 **AcousticFeaturesExtraction** - The algorithm used for extracting acoustic features and stuff. 10-fold cross-validation
