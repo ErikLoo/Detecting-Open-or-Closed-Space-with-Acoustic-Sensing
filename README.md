@@ -30,8 +30,10 @@ SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client tha
 
 **AcousticFeaturesExtraction** 
 <p align="center">
+  <img src="Images/closed.png" width = "300px">
+  <img src="Images/open.png" width = "300px">
 </p>
-This module runs a multilayered perception on all the collected acoustic data. It classies the acoustic data into two distinct categories: closed and open. 
+This module runs a multilayered perception on all the collected acoustic data. It classies the acoustic data into two distinct categories: closed and open. Spectrograms of the sound reflections collected in a closed environment (left) and a open environment (right) are presented in here.
 
 **Results**<br />
 In order to account for environmental factors, such as temperature, humidity and noise, we placed the sensor unit to collect data in each type of environment at three different time intervals of a day: 8:00am~11:00am, 11:00am~2:00pm and 2:00pm~6:00pm.  For each type environment at each time interval, we had the sensor unit probe 100 times, which summed up to a total of 23x3x100 = 6900 times. All the data were then fed into a multilayered perceptron for classification. 
