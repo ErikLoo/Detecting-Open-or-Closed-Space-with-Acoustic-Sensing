@@ -27,7 +27,7 @@ The SoQrLocServer is a Java server that runs on PC. The serve is responsbile for
   <img src="Images/client2.JPG">
 </p>
 SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client that runs on the Android device. It's responsible for collecting and sending the acoustic data throught the WLAN to the Javs server. To run the client, install the client app on a smartphone through Android Studio and connect the smartphone to the WLAN. To connect to the Java server hosted on PC, type in the IPv4 Address and press "Send". 
-
+\
 **AcousticFeaturesExtraction** 
 <p align="center">
 </p>
