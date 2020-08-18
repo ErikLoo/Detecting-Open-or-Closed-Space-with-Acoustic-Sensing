@@ -6,7 +6,7 @@ The purpose of this project is to explore the technical feasility of detecting o
 
 **Hardware Setup** - An android device with amplied receiver
 <p align="center">
-  <img src="images/open_space.png" width="300" height="500">
+  <img src="Images/open_space.png" width="300" height="500">
 </p>
 The android device is being used as programmable micro-controller
 
