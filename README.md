@@ -21,12 +21,17 @@ The android device is essentially being used as programmable micro-controller. W
 </p>
 The SoQrLocServer is a Java server that runs on PC. The serve is responsbile for processing all the audio files sent from multiple Andorid devices. It can be opened in Eclipse. Once open, click on the "Run" button the IDE and wait for the server to be ready. 
 
+
 **SoLrSpacePropertyDetection - The TCP client responsbile for operating the android device**
 <p align="center">
   <img src="Images/client2.JPG">
 </p>
 SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client that runs on the Android device. It's responsible for collecting and sending the acoustic data throught the WLAN to the Javs server. To run the client, install the client app on a smartphone through Android Studio and connect the smartphone to the WLAN. To connect to the Java server hosted on PC, type in the IPv4 Address and press "Send". 
 
+**AcousticFeaturesExtraction** 
+<p align="center">
+  <img src="Images/server.JPG">
+</p>
+This module runs a multilayered perception on all the collected acoustic data. It classies the acoustic data into two distinct categories: closed and open. 
 
-
-**AcousticFeaturesExtraction** - The algorithm used for extracting acoustic features and stuff. 10-fold cross-validation
+**Results""
