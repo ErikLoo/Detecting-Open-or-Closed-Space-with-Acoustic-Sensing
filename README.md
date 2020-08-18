@@ -30,7 +30,6 @@ SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client tha
 
 **AcousticFeaturesExtraction** 
 <p align="center">
-  <img src="Images/server.JPG">
 </p>
 This module runs a multilayered perception on all the collected acoustic data. It classies the acoustic data into two distinct categories: closed and open. 
 
