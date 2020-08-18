@@ -28,12 +28,12 @@ The SoQrLocServer is a Java server that runs on PC. The serve is responsbile for
 </p>
 SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client that runs on the Android device. It's responsible for collecting and sending the acoustic data throught the WLAN to the Javs server. To run the client, install the client app on a smartphone through Android Studio and connect the smartphone to the WLAN. To connect to the Java server hosted on PC, type in the IPv4 Address and press "Send". 
 
-**Data Collection**
-In order to account for environmental factors, such as temperature, humidity and noise, we placed the sensor unit to collect data in each type of environment at three different time intervals of a day: 8:00am~11:00am, 11:00am~2:00pm and 2:00pm~6:00pm.  For each type environment at each time interval, we had the sensor unit probe 100 times, which summed up to a total of 23x3x100 = 6900 times. All the data were then fed into a multilayered perceptron for classification. 
-
 **AcousticFeaturesExtraction** 
 <p align="center">
 </p>
 This module runs a multilayered perception on all the collected acoustic data. It classies the acoustic data into two distinct categories: closed and open. 
 
-**Results""
+**Results**
+<p align="center">
+</p>
+In order to account for environmental factors, such as temperature, humidity and noise, we placed the sensor unit to collect data in each type of environment at three different time intervals of a day: 8:00am~11:00am, 11:00am~2:00pm and 2:00pm~6:00pm.  For each type environment at each time interval, we had the sensor unit probe 100 times, which summed up to a total of 23x3x100 = 6900 times. All the data were then fed into a multilayered perceptron for classification. 
