@@ -16,7 +16,7 @@ The prototype is made of: (1) speaker (2) microphone (3) android device (4) ampl
 The android device is essentially being used as programmable micro-controller. We added an extenal speaker-microphone module to the device for two primary reasons: (1) To amplify the acoustic signal. (2) To place the microphone and the speaker on the same side so the body of the phone won't impede the propagation of sound waves. 
 
 **SoLrSpacePropertyDetection - The Android client responsbile for operating the android device**
-
+SoLrSpacePropertyDetection is the Andorid client that runs on the Android device. It's responsible for collecting and sending the acoustic data throught the WLAN to the Javs server. To run the client, install the client app on a smartphone and connect the smartphone to the WLAN. 
 
 **SoQrLocServer - The Java server** that sends command to multiple android clients. Timing.
 
