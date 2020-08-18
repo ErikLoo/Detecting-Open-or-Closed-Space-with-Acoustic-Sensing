@@ -4,7 +4,7 @@
   <img src="Images/spaces.png">
 </p>
 
-The purpose of this project is to explore the technical feasilities of detecting open/closed space in the indoor environment with acoustic sensing. For the evaluation, We identifed 21 spaces, commonly seen in office or household environments. The first 14 spaces shown in the image are closed space, while the last 7 spaces count as open space. Please note that some of closed space are slights opened to demonstrate the sensor placement. We then placed a self-made prototype in each space. The prototype is capable of emitting and receiving ultrasonic waves (17K-20K Hz sine-wave sweep signal) . Since open and closed spaces would produce different reflections of waves, we can train a machine classifier to learn the differences and differentiate the two spaces. The results of this project could inform future design of an <b>indoor item-finding system for lost objects</b>. 
+The purpose of this project is to explore the technical feasilities of detecting open/closed space in the indoor environment with acoustic sensing. For the evaluation, We identifed 21 spaces, commonly seen in office or household environments. The first 14 spaces shown in the image are closed space, while the last 7 spaces count as open space. Please note that some of closed space are slights opened to demonstrate the sensor placement. We then placed a self-made prototype in each space. The prototype is capable of emitting and receiving ultrasonic waves (<i>17K-20K Hz sine-wave sweep signal</i>) . Since open and closed spaces would produce different reflections of waves, we can train a machine classifier to learn the differences and differentiate the two spaces. The results of this project could inform future design of an <b>indoor item-finding system for lost objects</b>. 
 
 <b>Hardware Setup - An Android device with an amplified receiver</b>
 <p align="center">
@@ -26,7 +26,7 @@ The SoQrLocServer is a Java server that runs on PC. The serve is responsbile for
 <p align="center">
   <img src="Images/client2.JPG">
 </p>
-SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client that runs on the Android device. It's responsible for collecting and sending the acoustic data throught the WLAN to the Javs server. To run the client, install the client app on a smartphone through Android Studio and connect the smartphone to the WLAN. To connect to the Java server hosted on PC, type in the IPv4 Address and press "Send". 
+SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client that runs on the Android device. It's responsible for collecting and sending the audio files throught the WLAN to the Javs server. To run the client, install the client app on a smartphone through Android Studio and connect the smartphone to the WLAN. To connect to the Java server hosted on PC, type in the IPv4 Address and press "Send". 
 <br/>
 <br/>
 <b>AcousticFeaturesExtraction</b> 
@@ -34,7 +34,7 @@ SoLrSpacePropertyDetection is the TCP (Transmission Control Protocol) client tha
   <img src="Images/closed.png" width = "300px">
   <img src="Images/open.png" width = "300px">
 </p>
-This module runs a multilayered perception on all the collected acoustic data. It computes MFCC (Mel-frequency cepstral coefficients) from the received audio files and identifies 12 MFCC features. It then use these features to train a classifier to detect whether the space in which the sensor unit is located is open or closed. Spectrograms of the sound reflections collected in a closed environment (left) and a open environment (right) are presented above.
+This module computes MFCC (Mel-frequency cepstral coefficients) from the received audio files and identifies 12 MFCC features. It then use these features to train a classifier (multilayered perceptron) to detect whether the space in which the sensor unit is located is open or closed. Spectrograms of the sound reflections collected in a closed environment (left) and a open environment (right) are presented above.
 <br/>
 <br/>
 <b>Results</b>
